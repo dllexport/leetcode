@@ -1,13 +1,13 @@
 #include <vector>
 #include <string>
-#include <set>
+#include <unordered_set>
 using namespace std;
 
 const vector<string> alp2morse = {".-","-...","-.-.","-..",".","..-.","--.","....","..",".---","-.-",".-..","--","-.","---",".--.","--.-",".-.","...","-","..-","...-",".--","-..-","-.--","--.."};
 
 int uniqueMorseRepresentations(vector<string>& words) {
 
-    set<string> unique_set;
+    unordered_set<string> unique_set;
 
     for(auto &i : words)
     {
