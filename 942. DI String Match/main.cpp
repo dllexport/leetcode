@@ -10,7 +10,7 @@ vector<int> diStringMatch(string S) {
     vector<int> vec(size + 1, 0);
 
     int min = 0;
-    int max = S.size();
+    int max = size;
 
 
     for (int j = 0; j < size; ++j)
