@@ -22,18 +22,15 @@ public:
 
     int sum = 0;
 
-    void visit(int val, int L, int R)
-    {
-        if (val >= L && val <= R)
-            sum += val;
-    }
-
     void rangeSumBSTImpl(TreeNode* root, int L, int R)
     {
         if (root == nullptr) return;
 
         rangeSumBSTImpl(root->left, L, R);
-        visit(root->val, L, R);
+        [&, this](){
+            if (root->val >= L && root->val <= R)
+                this->sum += root->val;
+        }();
         rangeSumBSTImpl(root->right, L, R);
 
     }
