@@ -7,7 +7,7 @@ public:
     }
 
     int ping(int t) {
-        
+
         if (queue.size() == 0)
         {
             queue.push(t);
