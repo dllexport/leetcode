@@ -15,7 +15,7 @@ func minDeletionSize(A []string) int {
 	var res int
 	for i := 0; i < elemSize; i++ {
 		for j := 1; j < arrSize; j++ {
-			fmt.Printf("%c < %c ?\n", A[j][i], A[j-1][i])
+			//fmt.Printf("%c < %c ?\n", A[j][i], A[j-1][i])
 			if A[j][i] < A[j-1][i] {
 				res++
 				break
