@@ -3,4 +3,4 @@ project(N-aryTreePostorderTraversal)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(aryTreePostorderTraversal main.cpp main.cpp)
+add_executable(aryTreePostorderTraversal main.cpp)
