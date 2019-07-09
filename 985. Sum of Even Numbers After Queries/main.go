@@ -1,14 +1,10 @@
 package main
 
-import "fmt"
-
 func sumEvenAfterQueries(A []int, queries [][]int) []int {
 	Answer := make([]int, len(A))
 	for i := 0; i < len(A); i++ {
 		val := queries[i][0]
 		index := queries[i][1]
-		fmt.Printf("val: %d, index: %d", val, index)
-
 		A[index] += val
 		for _, v := range A {
 			if v%2 == 0 {
