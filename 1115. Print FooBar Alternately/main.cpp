@@ -1,6 +1,8 @@
+#include <functional>
 #include <mutex>
 #include <atomic>
 #include <condition_variable>
+using namespace std;
 
 class FooBar {
 private:
@@ -38,3 +40,8 @@ public:
         }
     }
 };
+
+int main(int argc, const char * argv[]) {
+    // insert code here...
+    return 0;
+}
